@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time-Zone converter demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito:wght@400;600;900&family=Open+Sans:ital,wght@0,700;1,500&family=PT+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body class="bg-dark bg-opacity-75">
+
+    <header class="container-fluid bg-dark">
+
+        <nav class="navbar pb-0">
+            <pre
+                class="navbar-brand"> <span class="text-white" ><a class="nav-link active" href="https://github.com/patoski-patoski">patrick.</a></span> <span class="text-white-50 ">StartsWith('P')</span>
+            </pre>
+
+            <i class="fa-solid fa-globe-africa text-white fa-2x mx-2"></i>
+        </nav>
+
+    </header>
+
+    <main class=" d-flex flex-row mb-3 input-group w-75  mx-auto border border-light rounded-start m-4 p-4">
+
+        <h1 class="h2 text-white-50 mb-3">Timezone converter</h1>
+
+        <div class="input-group has-validation">
+
+            <select class="text-truncate w-25 form-select-lg border rounded-1" name="" id="" aria-label="Default select example">
+                <option selected>Select time zone </option>
+                <option value="EAT">East Africa Time (EAT)</option>
+                <option value="WAT">West African Standard Time (WAT)</option>
+                <option value="GMT-1">Greenwich Mean Time (GMT)</option>
+                <option value="CET">Central Eurpean Standard Time</option>
+                <option value="CAT">Central AFrica Time (CAT)</option>
+                <option value="EET">Eastern European Standard Time (EET)</option>
+                <option value="SAT">South AFrica Standard Time (SAT)</option>
+            </select>
+
+            <i class="fa-regular fa-plus text-white fa-2x mx-2"></i>
+
+            <div class="form-floating">
+                <input type="time" class="input-time form-control" id="floatingInputGroup2" required>
+                <label for="floatingInputGroup2">Enter Hour</label>
+            </div>
+
+            <i class="fa-regular fa-plus text-white fa-2x mx-2"></i>
+            
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select a city </option>
+                <option value="Accra">Accra (Ghana)</option>
+                <option value="Lagos">Lagos (Nigeria)</option>
+                <option value="Johannesburg">Johannesburg(South Africa)</option>
+                <option value="Nairobi">Nairobi (Kenya)</option>
+                <option value="Monrovia">Monrovia (Liberia)</option>
+                <option value="Kampala">Kampala (Uganda)</option>
+                <option value="Windhoek">Windhoek (Namibia)</option>
+                <option value="Casablanca">Casablanca (Morroco)</option>
+                <option value="Algiers">Algiers (Algeria)</option>
+                <option value="Cairo">Cairo (Egypt)</option>
+                <option value="Freetown">Freetown (Sierra Leone)</option>
+                <option value="Mogadishu">Mogadishu (Somalia)</option>
+                <option value="Juba">Juba (South Sudan)</option>
+                <option value="Khartoum">Khartoum(Sudan)</option>
+                <option value="Kigali">Kigali (Rwanda)</option>
+                <option value="Lusaka">Lusaka (Zambia)</option>
+                <option value="Harare">Harare (Zimbabwe)</option>
+                <option value="Tunis">Tunis (Tunisia)</option>
+                <option value="Dodoma">Dodoma (Tanzania)</option>
+                <option value="Lobamba">Lobamba (Swaziland)</option>
+                <option value="Yaounde">Yaounde(Cameroon)</option>
+                <option value="Kinshasa">Kinshasa (Democratic Rebublic of the Congo)</option>
+
+                <option value="Lusaka">Lusaka (Zambia)</option>
+
+                <option value="Lilongwe">Lilongwe (Malawi)</option>
+                <option value="Brazzaville">Brazzaville( The Republic of Congo)</option>
+              </select>
+
+              <i class="fa-regular fa-plus text-white fa-2x mx-2"></i>
+
+              <select class="form-select mx-auto" id="select">
+                  <option value=""></option>
+                  <option value="am">am</option>
+                  <option value="pm">pm</option>
+              </select>
+
+
+        </div>
+        <button class="rounded-3 btn btn-success mx-auto mt-4"> Convert Time</button>
+
+    </main>
+
+    <div id="result-text" class=" w-50 p-4 mt-4 container">
+        <h2 id="h2" class="text-white m-3">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Reiciendis consequatur veritatis quas cupiditate aliquid ad dicta excepturi dolor aspernatur quidem,
+            ullam fugiat omnis aut sint nam tempora facere similique! Earum.</h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
