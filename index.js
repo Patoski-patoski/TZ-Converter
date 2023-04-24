@@ -31,20 +31,23 @@ button.addEventListener("click", () =>
     let getHour = Number(inputValue.split(":")[0]);
     let getMinutes = Number(inputValue.split(":")[1]);
     const selectTimeZoneOption = timeZone.options[timeZone.selectedIndex];
-    const timezoneTextContent = selectTimeZoneOption.textContent;
+    const timezoneTextContent = selectTimeZoneOption.textContent; 
     const selectCountryOption = countries.options[countries.selectedIndex];
     const countryTextContent = selectCountryOption.textContent;
     let result = document.querySelector("h4"); 
 
    if (timeZone.value > countries.value)
    {
-        getHour -=  timeZone.value +  countries.value;
+        getHour = getHour - (+timeZone.value) + +countries.value;
+        // if (getHour < 0) {
+        //     getHour = -getHour;
+        // }
         result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${getHour}:${getMinutes}`;
    }
 
    else if(timeZone.value < countries.value)
    {
-        getHour += (countries.value - timeZone.value);
+        getHour = getHour + (+countries.value) - +timeZone.value;
         result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${getHour}:${getMinutes}`;
    }
    else
