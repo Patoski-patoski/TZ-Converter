@@ -1,11 +1,9 @@
+
 # TIME ZONE CONVERTER
 
-When I created this program, I was currently undergoing a 12-month Software engineering training, designed for Anglophone African tech enthusiasts. Keeping to date and time was essential to succeed in the program and due to the variety of time zones between African countries, People began to miss deadlines and meetings. It was a little buggy problem.
+When I created this program, I was undergoing a 12-month Software engineering training, designed for Anglophone African tech enthusiasts. Keeping to date and time was essential to succeed in the program and due to the variety of time zones between African countries, People began to miss deadlines and meetings. It was a little buggy problem.
 
 ***
-
-Because I do not want to miss any more meetings, I attempted to create a solution that converts a given time to the time of a selected region.
-
 ## GETTING STARTED
 
 The converter takes the user's time and converts it to the time of a selected country.Internet conectionis required only for the opening onthe web. JavaScript engine takes care of the rest :)
@@ -22,3 +20,4 @@ The converter takes the user's time and converts it to the time of a selected co
 It's Monday, I just received a push notification on slack about a meeting scheduled to hold at 13:30 WET.
 Holy sheet, what is WET? Panic Panic. 
 Panic no more brethren, the T-Z converter is here. Just select the name of your country and I would give you an accurate converted time. 
+=======
