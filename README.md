@@ -1,12 +1,24 @@
-<i>I am currently undergoing a 12-month Software engineering training, designed to train African tech enthusiasst and keeping to date and time was necessary to succeed in the activity.</i>.
+# TIME ZONE CONVERTER
 
-I noticed most African countries differed from each other based on timezone and this caused confusion and panic among some students. I decided to solve the problem by creating a solution that converts a given time to the time of a selected region.
+When I created this program, I was currently undergoing a 12-month Software engineering training, designed for Anglophone African tech enthusiasts. Keeping to date and time was essential to succeed in the program and due to the variety of time zones between African countries, People began to miss deadlines and meetings. It was a little buggy problem.
 
-Steps Taken to collect maximum nation of students:
+***
 
-1) Took a statistic from slack channels to determine the number of African students in the programme.
+Because I do not want to miss any more meetings, I attempted to create a solution that converts a given time to the time of a selected region.
 
-2) I researched how many african country speaks English(the programme was run in the English Language).
+## GETTING STARTED
 
-3) Did a mass posting on various channel to reach out any micro nationalist(one candidate from a nation may not be obvious ) who would like to indicate their country.
+The converter takes the user's time and converts it to the time of a selected country.Internet conectionis required only for the opening onthe web. JavaScript engine takes care of the rest :)
 
+1. Open the program in any web browser of your choice.
+2. Select the time you want to convert.
+3. Select the timezone for the time in number 2 above.
+4. Select the country you would like to convert the time to. For example, you would convert the time and timezone in numbers 2 and 3 respectively to that of the country you selected.
+5. Press the convert button.
+6. The converted time is displayed below the button.
+
+## USE CASES
+
+It's Monday, I just received a push notification on slack about a meeting scheduled to hold at 13:30 WET.
+Holy sheet, what is WET? Panic Panic. 
+Panic no more brethren, the T-Z converter is here. Just select the name of your country and I would give you an accurate converted time. 
