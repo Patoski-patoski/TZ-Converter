@@ -119,6 +119,16 @@ h3
         max-width: 100%;
     }
 
+    #country
+    {
+        min-width: 90%;
+    }
+
+    #timeZone
+    {
+        min-width: 90%;
+    }
+
     h4
     {
         font-size: 0.4em;
@@ -137,6 +147,7 @@ h3
     {
         font-size: 0.7em;
     }
+
 }
 
 @media (max-width: 1024px)
