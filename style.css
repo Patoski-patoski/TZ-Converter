@@ -106,3 +106,18 @@ h3
 {
     display: none;
 }
+
+
+@media (max-width: 600px) 
+{
+    button[type = submit]
+    {
+        max-width: 100%;
+    }
+
+    input[type = time]
+    {
+        max-width: 100%;
+    }
+
+}
