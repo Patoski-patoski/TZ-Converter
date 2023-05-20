@@ -4,6 +4,7 @@
 When I created this program, I was undergoing a 12-month Software engineering training, designed for Anglophone African tech enthusiasts. Keeping to date and time was essential to succeed in the program and due to the variety of time zones between African countries, People began to miss deadlines and meetings. It was a little buggy problem.
 
 ***
+
 ## GETTING STARTED
 
 The converter takes the user's time and converts it to the time of a selected country.Internet conectionis required only for the opening onthe web. JavaScript engine takes care of the rest :)

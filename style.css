@@ -9,7 +9,6 @@ body
 {
     font-size: 1.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
     line-height: 1.7;
     background: url(https://images.unsplash.com/photo-1588930874653-e833732364d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwxNjF8fGNsb2NrfGVufDB8fHx8MTY4MjE3NTM0Mg&ixlib=rb-4.0.3&q=80&w=1080);
     background-repeat: no-repeat; 
@@ -120,4 +119,36 @@ h3
         max-width: 100%;
     }
 
+    h4
+    {
+        font-size: 0.4em;
+        line-height: 1.3rem;
+    }
+
+}
+
+@media (max-width: 768px) 
+{
+    body 
+    {
+        line-height: 0.7;
+    }
+    h4
+    {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 1024px)
+{
+
+
+}
+
+@media (max-width: 768px), (max-width: 1024px)
+{
+    *, *::after, *::before
+    {
+       margin: inherit;
+    }
 }
