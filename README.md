@@ -22,6 +22,6 @@ General Approach: The code uses a manual approach to time zone conversion, which
 
 ## USE CASES
 
-It's Monday, I just received a push notification on slack about a meeting scheduled to hold at 13:30 WET.
+It's Monday, I just received an email about a meeting scheduled to hold at 13:30 WET.
 Holy sheet, what is WET? Panic Panic.
 Panic no more brethren, the T-Z converter is here. Just select the name of your country and I would give you an accurate converted time.
