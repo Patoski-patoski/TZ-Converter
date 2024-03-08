@@ -7,7 +7,7 @@ When I created this program, I was undergoing a 12-month Software engineering tr
 
 ## GETTING STARTED
 
-The converter takes the user's time and converts it to the time of a selected country.Internet conectionis required only for the opening onthe web. JavaScript engine takes care of the rest :)
+The converter takes the user's time and converts it to the time of a selected country.Internet connection is required only for the opening the program on the web. JavaScript engine takes care of the rest :)
 
 1. Open the program in any web browser of your choice.
 2. Select the time you want to convert.
@@ -15,6 +15,10 @@ The converter takes the user's time and converts it to the time of a selected co
 4. Select the country you would like to convert the time to. For example, you would convert the time and timezone in numbers 2 and 3 respectively to that of the country you selected.
 5. Press the convert button.
 6. The converted time is displayed below the button.
+
+## Warning
+
+General Approach: The code uses a manual approach to time zone conversion, which may become error-prone during scale-up and does not account for all the complexities of time zone differences, such as daylight saving time changes.
 
 ## USE CASES
 
