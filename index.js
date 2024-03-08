@@ -6,13 +6,25 @@ const countries = document.getElementById("country");
 const button = document.getElementById("button");
 const pseudoTime = document.getElementById("faketime");
 
-//get the default current date (UTC standard)
+function checkOverLap(getHour) {
+    let count = 0;
+    const military_time = 23;
+
+    if (getHour < military_time)
+        return getHour;
+
+    while (getHour > military_time) {
+        count++;
+        getHour--;
+    }
+    return count;
+}
 
 let date = new Date();
 let hour = date.getHours();
 let minutes = date.getMinutes();
 
-time.value = `${hour}:${minutes}`;
+time.value = `${hour}:${minutes} `;
 pseudoTime.value = time.value;
 
 time.addEventListener("change", () => {
@@ -28,11 +40,11 @@ timeZone.addEventListener("change", () => {
 button.addEventListener("click", () => {
     let inputValue = time.value;
     let getHour = Number(inputValue.split(":")[0]);
-    let getMinutes = Number(inputValue.split(":")[1]); 
+    let getMinutes = Number(inputValue.split(":")[1]);
 
     let enterTime = document.querySelector(".enter-time");
 
-    if (getHour == "" || getMinutes == "") {
+    if (isNaN(getHour) || isNaN(getMinutes)) {
         enterTime.textContent = "Please enter a valid time";
         enterTime.style.color = "red";
         return;
@@ -48,34 +60,18 @@ button.addEventListener("click", () => {
 
     let result = document.querySelector("h4");
 
-    if (timeZone.value > countries.value) {
+    if (parseInt(timeZone.value) > parseInt(countries.value)) {
         getHour = +getHour - (+timeZone.value) + +countries.value;
-        if (getHour.toString().length == 1) {
-            getHour = `0${getHour}`;
-        }
-        if (getMinutes.toString().length == 1) {
-            getMinutes = `0${getMinutes}`;
-        }
-        result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${getHour}:${getMinutes}`;
-    }
-
-    else if (timeZone.value < countries.value) {
-        if (getHour.toString().length == 1) {
-            getHour = `0${getHour}`;
-        }
-
-        if (getMinutes.toString().length == 1) {
-            getMinutes = `0${getMinutes}`;
-        }
+    } else if (parseInt(timeZone.value) < parseInt(countries.value)) {
         getHour = +getHour + (+countries.value) - +timeZone.value;
-        result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${getHour}:${getMinutes}`;
     }
-    else
-        if (getHour.toString().length == 1) {
-            getHour = `0${getHour}`;
-        }
-    if (getMinutes.toString().length == 1) {
-        getMinutes = `0${getMinutes}`;
+
+    if (getHour < 10) {
+        getHour = `0${getHour} `;
     }
-    result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${getHour}:${getMinutes}`;
+    if (getMinutes < 10) {
+        getMinutes = `0${getMinutes} `;
+    }
+
+    result.textContent = `${inputValue} ${timezoneTextContent}, when converted to the time in ${countryTextContent} is: ${checkOverLap(getHour)}:${getMinutes} `;
 });
