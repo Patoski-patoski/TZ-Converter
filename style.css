@@ -47,6 +47,7 @@ input[type = "time"]
     border-radius: 0.3rem;
     border: none;
     max-width: 40%;
+    cursor: pointer;
 }
 
 select#country
@@ -56,6 +57,7 @@ select#country
     border: none;
     max-width: 40%;
     appearance: none;
+    cursor: pointer;
 } 
 
 select#timeZone
@@ -67,6 +69,7 @@ select#timeZone
     max-width: 40%;
     background-color: #333;
     color: #fff;
+    cursor: pointer;
 }
 
 button[type = "submit"]
@@ -77,8 +80,8 @@ button[type = "submit"]
     margin-top: 1em;
     max-width: 20%;
     background-color: rgba(21,32,43,1.00);
-
     color: #fff;
+    cursor: pointer;
 }
 
 button[type = "submit"]:hover
@@ -148,12 +151,6 @@ h3
     {
         font-size: 0.7em;
     }
-
-}
-
-@media (max-width: 1024px)
-{
-
 
 }
 
