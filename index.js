@@ -7,10 +7,10 @@ const button = document.getElementById("button");
 const pseudoTime = document.getElementById("faketime");
 
 function checkOverLap(getHour) {
-    let count = 0;
+    let count = -1;
     const military_time = 23;
 
-    if (getHour < military_time)
+    if (getHour <= military_time)
         return getHour;
 
     while (getHour > military_time) {
