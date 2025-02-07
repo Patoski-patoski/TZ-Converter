@@ -20,6 +20,11 @@ function checkOverLap(getHour) {
     return count;
 }
 
+// function isValidTime(inputValue){
+//     const patternTime = /^([01]?[0-9]|2[0-3]):([0-5][0-9])$/;
+//     return patternTime.test(inputValue);
+// }
+
 let date = new Date();
 let hour = date.getHours();
 let minutes = date.getMinutes();
@@ -44,11 +49,11 @@ button.addEventListener("click", () => {
 
     let enterTime = document.querySelector(".enter-time");
 
-    if (isNaN(getHour) || isNaN(getMinutes)) {
-        enterTime.textContent = "Please enter a valid time";
-        enterTime.style.color = "red";
-        return;
-    }
+    // if (!isValidTime(inputValue)) {
+    //     enterTime.textContent = "Please enter a valid time";
+    //     enterTime.style.color = "red";
+    //     return;
+    // }
 
     enterTime.style.color = "#fff"
     enterTime.textContent = "Enter the time";
