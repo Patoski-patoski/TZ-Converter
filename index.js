@@ -32,15 +32,23 @@ let minutes = date.getMinutes();
 time.value = `${hour}:${minutes} `;
 pseudoTime.value = time.value;
 
-time.addEventListener("change", () => {
-    let inputValue = time.value;
-    pseudoTime.value = inputValue;
-});
+// time.addEventListener("change", () => {
+//     let inputValue = time.value;
+//     pseudoTime.value = inputValue;
+// });
 
-timeZone.addEventListener("change", () => {
+// timeZone.addEventListener("change", () => {
+//     let inputValue = time.value;
+//     pseudoTime.value = inputValue;
+// });
+
+const updatePseudoTime = () => {
     let inputValue = time.value;
     pseudoTime.value = inputValue;
-});
+};
+
+time.addEventListener("change", updatePseudoTime);
+timeZone.addEventListener("change", updatePseudoTime);
 
 button.addEventListener("click", () => {
     let inputValue = time.value;
